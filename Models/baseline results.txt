@@ -1,0 +1,29 @@
+Naive Bayes:
+Evaluated on file cv_recent.txt with 247 Cases and 892 solves
+Top 10 Accuracy: 0.4876681614349776
+Top 20 Accuracy: 0.600896860986547
+Top N+5 Accuracy: 0.5426008968609866
+Evaluated on file test_recent.txt with 275 Cases and 947 solves
+Top 5 Accuracy: 0.3885955649419219
+Top 10 Accuracy: 0.4699049630411827
+Top N+5 Accuracy: 0.5195353748680043
+
+750-NN:
+Evaluated on file cv_recent.txt with 247 Cases and 892 solves
+Top 10 Accuracy: 0.5100896860986547
+Top 20 Accuracy: 0.6300448430493274
+Top N+5 Accuracy: 0.5728699551569507
+Evaluated on file test_recent.txt with 275 Cases and 947 solves
+Top 5 Accuracy: 0.39704329461457233
+Top 10 Accuracy: 0.4931362196409715
+Top N+5 Accuracy: 0.5491024287222809
+
+Mat-Fac (5 latent factors & 0.5 regularization):
+Evaluated on file cv_recent.txt with 247 Cases and 892 solves
+Top 10 Accuracy: 0.42713004484304934
+Top 20 Accuracy: 0.5
+Top N+5 Accuracy: 0.4641255605381166
+Evaluated on file test_recent.txt with 275 Cases and 947 solves
+Top 5 Accuracy: 0.3558606124604013
+Top 10 Accuracy: 0.42555438225976766
+Top N+5 Accuracy: 0.47940865892291445

@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <title>Australian Informatics Training Site - Hub</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="/aioc/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/aioc/bootstrap/css/bootstrap.min.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/aioc/bootstrap/css/bootstrap-responsive.min.css" type="text/css">
+  <link rel="stylesheet" href="/aioc/ben-aioc.css" type="text/css">
+  <!--<script src="/aioc/christmas.js"></script>-->
+  <!--super rad christmas script installed by ben stott who is super rad-->
+  
+  </head>
+  <body class="pageWithContainer">
+    <canvas id="canvas"></canvas>
+    <div class="span10 container-fluid" style="margin: 0 auto; float: none;">
+    <div class="row-fluid">
+    <span class="span6 offset3">
+	<img src="/aioc/images/aiocheader.jpg" alt="AIOC Banner" border=0>
+    </span>
+    </div>
+    <div class="row-fluid">
+<div class='span12'><p><h1>Training Hub</h1></p>
+<p class="index"><ul class="nav nav-tabs"><li class='dropdown active'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Home
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/cgi-bin/train/hub.pl?expand=all">Expand all</a>
+<li><a href="/cgi-bin/train/hub.pl">Contract all</a>
+</ul><li><a href="/cgi-bin/train/fame.pl">Hall of fame</a><li><a href="/cgi-bin/train/help.pl">Help</a><li><a href="/cgi-bin/train/register.pl">New user</a></ul></p><p><b>News:</b> <a href="#news">See below (updated Tue  5 Jan 2021).</a><br><b>Forums:</b> <a href="http://orac.amt.edu.au/forums/">Last post made Tue 23 Dec 2014.</a>
+<br><b>Chat room </b>(unofficial)<b>:</b> <a href="http://webchat.freenode.net/?channels=aioc">#aioc at freenode.net</a></p>
+<span class="span5"><form method="POST" action="/cgi-bin/train/index.pl">
+<table class="table table-striped table-bordered">
+<tr><th>Username:</th>
+<td><input type="text" name="login_username" class="span12"
+maxlength=20></td></tr>
+<tr><th>Password:</th>
+<td><input type="password" name="login_password" class="span12"
+maxlength=20></td></tr>
+<tr><td colspan=2 align="left" class="button">
+<input class="btn btn-primary" type="submit" value="Log in" name="login_submit">
+<div style="font-size: 80%; margin-top: 5px"><a href="register.pl">Register</a> | <a href="#" onClick="toggle('_spanFyp'); return false">Forgot your password?</a> <span style="display:none" id="_spanFyp">Send us an email at <a href="mailto:training@orac.amt.edu.au" target="_blank">training@orac.amt.edu.au</a> and we'll get you sorted.</span>
+</div>
+</td></tr>
+</table>
+</form>
+
+<script type=text/javascript>function toggle(id) {var elem = document.getElementById(id); if (elem.style.display == "none") {elem.style.display = "block";} else {elem.style.display = "none";}}</script>
+</span><span class="span6"><p>Welcome to the online training site for the Australian Informatics Olympiad programme!</p>
+<p>Below you can view past AIO and FARIO problems. <a href="/cgi-bin/train/register.pl">Register an account</a> to get your solutions marked by our online evaluator.</p>
+</span><div class="clearfix"></div><p>Are you new to orac? Are you new to programming in general? Check out our <a href="/cgi-bin/train/tutorials/getting_started/index.html">getting started</a> guide.<span class="span9 offset1"><table class="table table-bordered table-condensed" >
+<tr><th class="first span4">Set</th><th class="span3">Problem</th></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="simple1">Starter Problems 1</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple1&problemid=333">Addition</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple1&problemid=342">Sitting or Standing?</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple1&problemid=362">Mixed Fraction</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple1&problemid=372">A Mindbending Scenario</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="simple2">Starter Problems 2</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple2&problemid=382">The Tremendous Tak-Tak Tree</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple2&problemid=383">Counting to Infinity</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple2&problemid=397">A Dish Best Served Cold</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple2&problemid=398">Drought</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="simple3">Starter Problems 3</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple3&problemid=412">Encyclop&aelig;dia</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple3&problemid=413">Dictionary</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple3&problemid=414">Triple Hunting</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=simple3&problemid=416">Friendlist</a></td></tr>
+<tr><td valign="top" rowspan=6 class="alert-info"><a name="aio20">AIO 2020</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio20&problemid=1127">Baubles</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio20&problemid=1128">Cookies</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio20&problemid=1129">Ghost Encounters</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio20&problemid=1130">Tennis Robot</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio20&problemid=1131">Ladybugs II</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio20&problemid=1132">Beach Umbrellas</a></td></tr>
+<tr><td valign="top" rowspan=6 class="alert-info"><a name="aio19">AIO 2019</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio19&problemid=1077">Vases</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio19&problemid=1078">RPS</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio19&problemid=1079">Hiring Monks</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio19&problemid=1080">Medusa&#39;s Snakes</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio19&problemid=1081">Evading Capture</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio19&problemid=1082">Lollipops, Sweets and Chocolates II</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio18int">AIO 2018 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio18int&problemid=1032">Street Construction</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio18int&problemid=1033">Castle Cavalry</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio18int&problemid=1034">Cloud Cover</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio18int&problemid=1035">Janitor</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio18sen">AIO 2018 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio18sen&problemid=1032">Street Construction</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio18sen&problemid=1034">Cloud Cover</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio18sen&problemid=1035">Janitor</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio18sen&problemid=1036">Detective</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio17int">AIO 2017 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio17int&problemid=973">Missing Mango</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio17int&problemid=980">Tag</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio17int&problemid=981">Snake Charmer</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio17int&problemid=983">Chimera II</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio17sen">AIO 2017 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio17sen&problemid=984">Concealed Coconut</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio17sen&problemid=981">Snake Charmer</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio17sen&problemid=983">Chimera II</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio17sen&problemid=985">Lollipops, Sweets and Chocolates</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio16int">AIO 2016 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio16int&problemid=902">Magic Squares</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio16int&problemid=903">Farmer Drama</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio16int&problemid=904">Sculpture II</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio16sen">AIO 2016 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio16sen&problemid=905">Probe</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio16sen&problemid=906">Balancing Aeroplanes II</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio16sen&problemid=907">Carmen Sanfrancisco II: Bank Robbing</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio15int">AIO 2015 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio15int&problemid=852">Snap Dragons II</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio15int&problemid=853">Wet Chairs</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio15int&problemid=854">Ruckus League</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio15sen">AIO 2015 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio15sen&problemid=853">Wet Chairs</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio15sen&problemid=854">Ruckus League</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio15sen&problemid=855">Snap Dragons III: Binary Snap</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio14int">AIO 2014 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio14int&problemid=781">Pygmy Hippos</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio14int&problemid=780">Corey&#39;s Party</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio14int&problemid=779">Chimera</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio14sen">AIO 2014 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio14sen&problemid=782">Giant Hippos</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio14sen&problemid=779">Chimera</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio14sen&problemid=783">Wormhole</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio13int">AIO 2013 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio13int&problemid=688">Archery</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio13int&problemid=689">Frog</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio13int&problemid=690">Save-It</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio13sen">AIO 2013 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio13sen&problemid=689">Frog</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio13sen&problemid=690">Save-It</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio13sen&problemid=691">Artclass</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio12int">AIO 2012 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio12int&problemid=628">NORT</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio12int&problemid=629">Cabinet Shuffle</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio12int&problemid=630">King Arthur II</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio12sen">AIO 2012 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio12sen&problemid=631">Posters</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio12sen&problemid=629">Cabinet Shuffle</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio12sen&problemid=632">Awesome Frog</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio11int">AIO 2011 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio11int&problemid=565">Pirates</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio11int&problemid=566">Sleight of Hand</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio11int&problemid=567">Tickets</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio11sen">AIO 2011 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio11sen&problemid=568">Alien</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio11sen&problemid=569">Slicing Paradise</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio11sen&problemid=570">Restaurants II</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio10int">AIO 2010 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio10int&problemid=485">Ninjas</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio10int&problemid=486">Choreography</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio10int&problemid=487">Oil</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aio10sen">AIO 2010 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio10sen&problemid=488">Heatwave</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio10sen&problemid=489">Snap Dragons</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio10sen&problemid=490">Island</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio09int">AIO 2009 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio09int&problemid=421">Travelling Salesperson</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio09int&problemid=422">Nomnomnom</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio09int&problemid=423">Safe Cracking</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio09int&problemid=425">Carmen Sanfrancisco</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio09sen">AIO 2009 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio09sen&problemid=422">Nomnomnom</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio09sen&problemid=424">Treasure Hunt</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio09sen&problemid=425">Carmen Sanfrancisco</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio09sen&problemid=426">No (One) Left</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio08int">AIO 2008 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio08int&problemid=355">Ladybugs</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio08int&problemid=356">Atlantis Rising</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio08int&problemid=357">Settling Debts</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio08int&problemid=358">Crowd Surfing</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio08sen">AIO 2008 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio08sen&problemid=357">Settling Debts</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio08sen&problemid=358">Crowd Surfing</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio08sen&problemid=359">Chocolate Shop</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio08sen&problemid=360">Russian Dolls</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio07int">AIO 2007 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio07int&problemid=334">Wetlands</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio07int&problemid=337">Superphone</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio07int&problemid=338">Mansion</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio07int&problemid=339">Invasion</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio07sen">AIO 2007 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio07sen&problemid=338">Mansion</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio07sen&problemid=339">Invasion</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio07sen&problemid=340">Restaurants</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio07sen&problemid=341">Air Drop</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio06int">AIO 2006 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio06int&problemid=250">Fashion Statement</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio06int&problemid=251">Mouse Hunt</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio06int&problemid=252">Psychological Jujitsu</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio06int&problemid=253">Atlantis: The Beginning</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio06sen">AIO 2006 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio06sen&problemid=254">Ants</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio06sen&problemid=255">Spies V: Voices in the Dark</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio06sen&problemid=253">Atlantis: The Beginning</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio06sen&problemid=256">Election</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio05int">AIO 2005 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio05int&problemid=244">Cute Numbers</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio05int&problemid=245">Curry</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio05int&problemid=246">Landmark</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio05int&problemid=247">Sculpture</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aio05sen">AIO 2005 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio05sen&problemid=245">Curry</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio05sen&problemid=248">Chimpanzee</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio05sen&problemid=247">Sculpture</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aio05sen&problemid=249">Jigsaw</a></td></tr>
+<tr><td valign="top" rowspan=6 class="alert-info"><a name="acio20contest0">ACIO 2020: Contest 0</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest0&problemid=1118">Sandwich Holes</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest0&problemid=1119">Bracelet Jewels</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest0&problemid=1120">Programming Pairs</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest0&problemid=1121">Snap Dragons: Accumulate</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest0&problemid=1122">Radio Transmission</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest0&problemid=1123">Battleship</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="acio20contest1">ACIO 2020: Contest 1</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest1&problemid=1089">Jogging</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest1&problemid=1090">Endgame</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest1&problemid=1091">Superheroes</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="acio20contest2">ACIO 2020: Contest 2</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest2&problemid=1110">Snap Tokens</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest2&problemid=1111">What. b. Shame!</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20contest2&problemid=1112">Lollipops, Sweets and Chocolates: GPS</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="acio20open">ACIO 2020: Open Contest</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20open&problemid=1114">Planet Battles: A New Land</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20open&problemid=1115">Black Panthers</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=acio20open&problemid=1116">Vibe Check</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aic98">AIC 1998</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic98&problemid=17">Shopping Malls</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic98&problemid=18">Anagram Solver</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic98&problemid=19">Building Integers</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aic99">AIC 1999</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic99&problemid=13">Hailstone Sequences</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic99&problemid=14">Hunt-a-Word</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic99&problemid=15">Cartography</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic99&problemid=16">King Arthur</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aic00">AIC 2000</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic00&problemid=9">Academic Espionage</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic00&problemid=10">Keeping Secrets</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic00&problemid=11">Analysing Bach</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic00&problemid=12">Displaying Paintings</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aic01">AIC 2001</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic01&problemid=5">Flowers</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic01&problemid=6">Cartography III</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic01&problemid=7">Spies</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic01&problemid=8">Mobiles</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aic02">AIC 2002</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic02&problemid=1">Halloween</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic02&problemid=2">Cartography II</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic02&problemid=3">Bureaucratic Bungling</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic02&problemid=4">Packing Pentominoes</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aic03">AIC 2003</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic03&problemid=20">Culture</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic03&problemid=21">Word Wrap</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic03&problemid=22">Stacking Numbers</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic03&problemid=23">Handwriting Recognition</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aic04int">AIC 2004 (Intermediate)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic04int&problemid=111">Bugs</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic04int&problemid=112">Genius</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic04int&problemid=114">AFL</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic04int&problemid=115">Atlantis</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="aic04sen">AIC 2004 (Senior)</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic04sen&problemid=112">Genius</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic04sen&problemid=113">Zig-Zag Cipher</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic04sen&problemid=115">Atlantis</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aic04sen&problemid=116">Bouncy Ball</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aiio06">AIIO 2006</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio06&problemid=201">Spies IV</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio06&problemid=202">Pipes</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio06&problemid=203">Hard Drive</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aiio07">AIIO 2007</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio07&problemid=268">Snurgle Holders</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio07&problemid=269">Cats III: Off With Their Heads</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio07&problemid=270">Trains</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aiio08">AIIO 2008</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio08&problemid=317">Diva III: A Note Gone Sour</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio08&problemid=318">Sunday Drive</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio08&problemid=319">Train Network</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aiio09">AIIO 2009</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio09&problemid=374">Space Invaders</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio09&problemid=375">IOI Team Selection</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio09&problemid=373">Frogs</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aiio10">AIIO 2010</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio10&problemid=439">Nomnomnomnom: Can Has Dessert?</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio10&problemid=440">Clam Oil</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio10&problemid=441">Budgie Shots</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aiio11">AIIO 2011</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio11&problemid=515">World Bus Driving Championships</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio11&problemid=516">Kiwileaks</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio11&problemid=517">The Terrifying Canary-Bird</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aiio12">AIIO 2012</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio12&problemid=591">Time Warp</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio12&problemid=592">Hopscootch</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio12&problemid=593">Negotiations</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aiio13">AIIO 2013</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio13&problemid=649">Flatman&#39;s Tower</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio13&problemid=650">Flight Planning II</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio13&problemid=651">Vitamin D</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aiio14">AIIO 2014</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio14&problemid=725">The Treeless Trees</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio14&problemid=726">Art, Key, Texture</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio14&problemid=727">Memes</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aiio15">AIIO 2015</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio15&problemid=806">Friendly</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio15&problemid=807">Going Home</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio15&problemid=808">Riding Jetstreams</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="aiio20">AIIO 2020</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio20&problemid=1086">Metropole</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio20&problemid=1087">L-Bots</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=aiio20&problemid=1088">Purview</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="monthly05_1">Challenge Problems 1</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=monthly05_1&problemid=163">Anagrammatic Primes</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=monthly05_1&problemid=4">Packing Pentominoes</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=monthly05_1&problemid=164">Nine Clocks</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=monthly05_1&problemid=105">Stargazing</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="fario04">FARIO 2004</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario04&problemid=105">Stargazing</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario04&problemid=106">Blue</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario04&problemid=107">Chariot Race</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="fario05">FARIO 2005</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario05&problemid=165">Mobile Construction Set</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario05&problemid=166">Monkey Tour</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario05&problemid=167">River</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="fario06">FARIO 2006</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario06&problemid=204">Guards</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario06&problemid=205">Escape from Civilisation</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario06&problemid=206">Belts</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario06&problemid=207">Lucky Wheels of Doom</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="fario07">FARIO 2007</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario07&problemid=271">Rescue Robot</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario07&problemid=272">Secret chamber of the Giza pyramid</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario07&problemid=273">Architecture</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario07&problemid=274">Global Warming</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="fario08">FARIO 2008</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario08&problemid=313">Graffiti</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario08&problemid=314">Sledge Track</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario08&problemid=315">Leaf Blower</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario08&problemid=316">Rock Climbing</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="fario09">FARIO 2009</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario09&problemid=376">Bookshop</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario09&problemid=377">Toy Factory</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario09&problemid=378">Memories</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario09&problemid=379">Fragrance</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="fario10">FARIO 2010</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario10&problemid=448">The FARIO Incident</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario10&problemid=449">ABC</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario10&problemid=450">Dating Site IT</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario10&problemid=451">Human LCD</a></td></tr>
+<tr><td valign="top" rowspan=4 class="alert-info"><a name="fario11">FARIO 2011</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario11&problemid=518">Bookshelf</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario11&problemid=519">House of a Thousand Blades</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario11&problemid=520">Life</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario11&problemid=521">The Virus</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="fario12">FARIO 2012</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario12&problemid=595">Master Chef</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario12&problemid=596">Happy Feet</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario12&problemid=594">Blackout</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="fario13">FARIO 2013</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario13&problemid=659">Algo-Fu</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario13&problemid=660">Super Maria</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario13&problemid=1043">Torusia</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="fario14">FARIO 2014</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario14&problemid=728">NSA</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario14&problemid=729">Connect</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario14&problemid=730">Super Maria II</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="fario15">FARIO 2015</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario15&problemid=809">The Nightlight</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario15&problemid=810">Frequent Flyer</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario15&problemid=811">Pam-Can Retires</a></td></tr>
+<tr><td valign="top" rowspan=2 class="alert-info"><a name="fario16">FARIO 2016</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario16&problemid=862">No Ball</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario16&problemid=892">Hooliganism</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="fario17">FARIO 2017</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario17&problemid=924">Pair Programming</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario17&problemid=926">Pyramid Cake</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario17&problemid=925">Optimal Delivery</a></td></tr>
+<tr><td valign="top" rowspan=2 class="alert-info"><a name="fario18">FARIO 2018</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario18&problemid=1007">Shadow Architecture</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario18&problemid=1008">Greed</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="fario19">FARIO 2019</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario19&problemid=1057">Papa and Baby Frog</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario19&problemid=1058">Coloured Walkway</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario19&problemid=1064">Nav</a></td></tr>
+<tr><td valign="top" rowspan=3 class="alert-info"><a name="fario20">FARIO 2020</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario20&problemid=1093">Footwork</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario20&problemid=1094">Loss of Balance</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=fario20&problemid=1095">Emergency Reinforcement</a></td></tr>
+<tr><td valign="top" rowspan=8 class="alert-info"><a name="precamppublic">Pre-camp Training</a></td><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=precamppublic&problemid=120">Stacks</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=precamppublic&problemid=122">RPN Calc</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=precamppublic&problemid=245">Curry</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=precamppublic&problemid=250">Fashion Statement</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=precamppublic&problemid=285">Fibonacci</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=precamppublic&problemid=417">Twin Prime Conjecture</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=precamppublic&problemid=419">Pairs</a></td></tr>
+<tr><td class="alert-success"><a href="/cgi-bin/train/problem.pl?set=precamppublic&problemid=857">Queues 2</a></td></tr>
+</table></span><div class="clearfix"></div><div class="alert">
+<h3><a name="news"></a><span style="color: black;">News</span></h3><p>
+
+<a href="http://ioi2020.sg/">IOI 2020</a> was held online by Singapore from the 13th to the 19th of September.
+Congratulations to the Australian team for earning one silver and three bronze medals!
+The team placed 69th, 102nd, 118th and 164th.
+
+</p>
+
+<p>
+
+There are known issues with std::list, std::unordered_map and std::unordered_set, so please avoid use of these in your submissions for the time being.
+
+</p>
+</div>
+</div></div><div class="row-fluid"><p>&nbsp;</p>
+<div align="center"><hr noshade width="85%" color="#0022BB" size=1></div>
+        <div class="row-fluid">
+            <div>
+                <p><a href="http://www.amt.edu.au/privacy-policy/">Privacy
+                    statement</a><br/>
+                &copy; Australian Mathematics Trust 2001-2021</p>
+            <address>Contact: <a href="mailto:training@orac.amt.edu.au">training@orac.amt.edu.au</a></address>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+<div class="clearfix"></div><pre style="border: 0; padding: 0; margin: 0; background-color: transparent;">Page generated: 12 July 2021, 10:14am AEST</pre></div></div></body>
+</html>

@@ -1,0 +1,29 @@
+cv: 892 solves
+test: 947 solves
+
+2720 recent Solves after removing private solves (capped at 30)
+48323 total Solves
+208 Public Problems
+4377 People who has solved 1 public problem
+522 People with recent solves
+
+Problem category:
+1: starter
+2: aio
+3: aic
+4: aiio
+5: fario
+
+Final Files:
+cleaned_problems.txt
+
+- List of problems with problem class
+- One problem id per line with its class, space seperated
+
+cv_recent.txt
+test_recent.txt
+train_solves.txt
+
+- These files all follow the format of 1 person description per line
+
+personid: <comma seperated ids of solved problems>
