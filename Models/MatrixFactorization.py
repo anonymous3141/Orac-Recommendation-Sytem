@@ -6,7 +6,7 @@ class MatrixFactorization(RecommenderBase):
     
     def __init__(self,K, D):
         super(MatrixFactorization, self).__init__()
-
+        np.random.seed(42069)
         # prepare matrices
 
         # one-hot categorical matrix
@@ -62,7 +62,7 @@ class MatrixFactorization(RecommenderBase):
 
         EPS = 10**(-6)
         prev_accuracy = 0
-        for i in range(125):
+        for i in range(260):
             # sigmoid is just for nicing up the values, doesn't change order
     
             loss = loss_fn(torch.sigmoid(torch.flatten((self.Umat @ self.Pmat) + (self.Cmat @ self.Cdat)+\
